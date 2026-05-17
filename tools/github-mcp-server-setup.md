@@ -73,5 +73,3 @@ https://github.com/github/github-mcp-server/releases/latest/download/github-mcp-
 - バイナリを取得して配置する
 - Fine-Grained Token で必要最小限の権限を付与する
 - `claude_desktop_config.json` にサーバ情報を登録して再起動する
-
-まずは Contents を Read-only で試し、必要に応じて Read and write に変更するのがおすすめ。
