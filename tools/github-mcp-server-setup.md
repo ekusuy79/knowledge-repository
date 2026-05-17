@@ -2,8 +2,9 @@
 
 ## 概要
 
-GitHub はパブリックな MCP サーバ（`api.githubcopilot.com/mcp`）を提供しているが、Claude Desktop の OAuth 対応の問題で現時点では利用できない。  
-代替として、ローカルに **github-mcp-server** を立てることで、Claude Desktop から GitHub リポジトリの参照・操作が可能になる。
+GithubのコネクタをClaudeに連携したが、repositoryの参照・操作等を行ってくれなかった。
+原因を調査したところ、どうやらClaude DesktopのOAuth対応の問題で、パブリックなMCPサーバーが利用できないことに起因するようだった。
+上記問題は、ローカルにgithubのmcpサーバーを建てることで回避出来るようなので、その対応を行った。
 
 参考記事: [Claude Desktop から GitHub を操作する ── github-mcp-server のセットアップガイド](https://zenn.dev/tjst_t/articles/260222-setup-github-mcp-server-for-claude-desktop)
 
