@@ -3,7 +3,7 @@
 ## 概要
 
 GithubのコネクタをClaudeに連携したが、repositoryの参照・操作等を行ってくれなかった。\
-原因を調査したところ、どうやらClaude DesktopのOAuth対応の問題で、\
+原因を調査したところ、どうやらClaude DesktopのOAuth対応の問題で、
 パブリックなMCPサーバーが利用できないことに起因するようだった。\
 上記問題は、ローカルにgithubのmcpサーバーを建てることで回避出来るようなので、その対応を行った。
 
@@ -29,11 +29,6 @@ GithubのコネクタをClaudeに連携したが、repositoryの参照・操作�
 https://github.com/github/github-mcp-server/releases/latest/download/github-mcp-server_Windows_x86_64.zip
 ```
 
-配置場所の例: `%USERPROFILE%\bin`  
-※ 後の設定ファイルにフルパスを記述するので、わかりやすい場所に置く。
-
----
-
 ### ステップ 2: GitHub Fine-Grained Token を作成する
 
 1. GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens
@@ -49,8 +44,6 @@ https://github.com/github/github-mcp-server/releases/latest/download/github-mcp-
 | Permissions > Contents | Read-only または Read and write |
 
 4. **Generate token** をクリックし、表示されたトークンをコピーして保管する
-
-> ⚠️ トークンはこの画面でしか表示されない。必ずコピーしておくこと。
 
 ---
 
@@ -72,16 +65,6 @@ https://github.com/github/github-mcp-server/releases/latest/download/github-mcp-
   }
 }
 ```
-
-> ⚠️ `command` にはフルパスを指定する。パス区切りはバックスラッシュ2つ（`\\`）で記述する。
-
----
-
-### ステップ 4: 動作確認
-
-1. Claude Desktop を再起動する
-2. 入力欄の右下アイコンから MCP サーバ一覧を確認する
-3. **github** が表示されていれば接続成功
 
 ---
 
