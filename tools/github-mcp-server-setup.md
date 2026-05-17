@@ -83,15 +83,6 @@ https://github.com/github/github-mcp-server/releases/latest/download/github-mcp-
 
 ---
 
-## つまずきポイント
-
-### パブリック MCP サーバが使えない理由
-
-Claude Desktop の OAuth フロー実装に問題があり、GitHub のパブリック MCP サーバ（`https://api.githubcopilot.com/mcp/`）に接続できない。  
-現時点での推奨ワークアラウンドは「ローカルバイナリ + PAT」の構成。
-
----
-
 ## まとめ
 
 - バイナリを取得して配置する
