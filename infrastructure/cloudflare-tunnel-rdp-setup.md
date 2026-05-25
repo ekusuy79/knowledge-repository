@@ -11,17 +11,14 @@ VPSのwindows serverに対してセキュアに接続する方法
 
 ## 環境
 
-- 接続元（クライアント側）: Windows 11 Pro
-- 接続先（サーバー側）: Windows 11 Pro
-
-> ⚠️ Windows Home エディションはデフォルトで RDP ホストになれない。Home の場合は RDP Wrapper Library などの追加設定が必要。
+- 接続元（クライアント側）: Windows 11
+- 接続先（サーバー側）: Windows Server 2022
 
 ---
 
 ## 前提条件
 
 - 接続先 PC が RDP を受け付けられる状態になっている
-- 接続元 PC に RDP クライアントがインストールされている
 - Cloudflare アカウントを作成済み
 
 ---
