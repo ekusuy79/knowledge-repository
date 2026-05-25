@@ -83,13 +83,10 @@ cloudflared.exe service install <TOKEN>
 
 デフォルト設定ではプライベート IP はローカルネットワークに接続されてしまうため、Cloudflare 経由になるよう変更する。
 
-1. Zero Trust → Settings → WARP Client → Device settings → Profile settings → 「Create profile」
-2. 名前を付けて「Build an expression」でメールアドレス等のルールを設定
-3. 「Create profile」をクリック
-4. 作成したプロファイルを選択 → 「Configure」
-5. 「Split Tunnels」を「Include IPs and domains」に変更（WARNING が出るが「Continue and delete」）
-6. サーバー PC のプライベート IP を入力して「Save destination」
-7. 「Back to Profile」→「Save profile」で保存
+1. Zero Trust → チームとリソース → デバイス から デバイスプロファイルタブを開く
+2. 一般プロファイルの「デフォルト」を選択し、「スプリットトンネル」を「IPとドメインを含める」を選択する。
+3. 警告が出るが続行する。
+4. セレクタにIPを選択し、接続先PCのIPを入力し「宛先の保存」を押下する。
 
 ---
 
