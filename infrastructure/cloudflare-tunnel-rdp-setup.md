@@ -25,13 +25,12 @@ VPSのwindows serverに対してセキュアに接続する方法
 
 ## 全体の流れ
 
-1. サーバー PC のプライベート IP アドレスを固定する
-2. Cloudflare Zero Trust を利用できるようにする
-3. サーバー PC との Tunnel を作成する
-4. デバイス登録ポリシーを設定する
-5. Cloudflare のデバイス設定を変更する
-6. クライアント PC に WARP をインストールし接続設定する
-7. RDP 接続する
+1. Cloudflare Zero Trust を利用できるようにする
+2. サーバー PC との Tunnel を作成する
+3. デバイス登録ポリシーを設定する
+4. Cloudflare のデバイス設定を変更する
+5. クライアント PC に WARP をインストールし接続設定する
+6. RDP 接続する
 
 ---
 
