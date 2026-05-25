@@ -47,7 +47,7 @@ VPSのwindows serverに対してセキュアに接続する方法
 
 1. Zero Trust → ネットワーク → コネクタ → トンネルを作成
 2. トンネル名を入力して「Save tunnel」
-3. 環境に合わせて cloudflared をインストール（Windows 64bit の場合は `.msi` インストーラを使用）
+3. クライアントPCに cloudflared をインストール（Windows 64bit の場合は `.msi` インストーラを使用）
 4. インストール後、コマンドプロンプトで動作確認
 
 ```bash
