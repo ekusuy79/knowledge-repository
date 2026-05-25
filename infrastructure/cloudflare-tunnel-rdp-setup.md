@@ -94,7 +94,8 @@ cloudflared.exe service install <TOKEN>
 
 ### 5. クライアント PC に WARP をインストールし接続設定する
 
-1. Zero Trust → Settings → Downloads → 「Download the WARP client」からクライアント OS に合ったインストーラをダウンロード・インストール
+1. 下記リンクからWARPをダウンロード、インストール。
+https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-windows-1/distribution_groups/release
 2. WARP 起動後、歯車アイコン → 環境設定 → アカウント → Cloudflare Zero Trust にログイン
 3. Team name を入力
 4. メールアドレスを入力し、届いた認証コードを入力してログイン
