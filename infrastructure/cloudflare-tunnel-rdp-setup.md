@@ -72,10 +72,12 @@ cloudflared.exe service install <TOKEN>
 
 接続できるデバイスを制限する。設定しないと Team 名を知っている人なら誰でも接続できてしまう。
 
-1. Zero Trust → Settings → WARP Client → Device enrollment permissions → Manage
-2. Rules タブ → 「Add a rule」
-3. Selector を「Emails」にし、Value に自分のメールアドレスを入力
-4. Rule action が「Allow」であることを確認して「Save」
+1. Zero Trust → チームとリソース → デバイス → 管理タブ → デバイスの登録の「管理」ボタンを押下。
+2. 「新しいポリシーを作成」を押下。
+3. ポリシールールにメールを選択し、自身のメールアドレスを設定。
+4. ポリシー名を入力し、「アクション」に「許可」を選択。
+5. 「テキストコントロール」に「両方向許可」を選択。
+6. 「ポリシーを保存」を押下。
 
 ---
 
