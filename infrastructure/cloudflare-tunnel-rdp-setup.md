@@ -2,7 +2,8 @@
 
 ## 概要
 
-Cloudflare Zero Trust の Cloudflare Tunnel を使い、VPSのwindows serverに対してセキュアに接続する方法
+Cloudflare Zero Trust の Cloudflare Tunnel を使い、\n
+VPSのwindows serverに対してセキュアに接続する方法
 
 参考記事: [Cloudflare Tunnelを利用して外部からWindows ProマシンへRDPする](https://zenn.dev/nakurei/articles/rdp-from-outside-to-windows-using-cloudflare)
 
