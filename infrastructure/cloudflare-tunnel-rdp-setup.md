@@ -34,30 +34,7 @@ VPSのwindows serverに対してセキュアに接続する方法
 
 ---
 
-## 手順
-
-### 1. サーバー PC のプライベート IP アドレスを固定する
-
-再起動後も同じ設定で RDP できるよう、接続先 PC の IP を固定する。
-
-1. コマンドプロンプトで `ipconfig` を実行し、以下を控える
-   - IPv4 アドレス（プライベート IP）
-   - デフォルトゲートウェイ
-
-2. Windows 設定 → ネットワークとインターネット → 該当アダプター → IP 割り当て → 編集
-
-3. 「手動」に切り替えて IPv4 をオンにし、以下を入力して保存
-
-| 項目 | 入力値 |
-| --- | --- |
-| IP アドレス | `ipconfig` で確認したプライベート IP |
-| サブネットマスク | `255.255.255.0` |
-| デフォルトゲートウェイ | `ipconfig` で確認したゲートウェイ |
-| 優先 DNS | `ipconfig` で確認したゲートウェイ |
-
----
-
-### 2. Cloudflare Zero Trust を利用できるようにする
+### 1. Cloudflare Zero Trust を利用できるようにする
 
 1. Cloudflare にログイン → サイドバーの「Zero Trust」をクリック
 2. Team name を設定する（後の手順で使うので覚えておく）
@@ -66,7 +43,7 @@ VPSのwindows serverに対してセキュアに接続する方法
 
 ---
 
-### 3. サーバー PC との Tunnel を作成する
+### 2. サーバー PC との Tunnel を作成する
 
 1. Zero Trust → Access → Tunnels → 「Add a tunnel」
 2. トンネル名を入力して「Save tunnel」
@@ -91,7 +68,7 @@ cloudflared.exe service install <TOKEN>
 
 ---
 
-### 4. デバイス登録ポリシーを設定する
+### 3. デバイス登録ポリシーを設定する
 
 接続できるデバイスを制限する。設定しないと Team 名を知っている人なら誰でも接続できてしまう。
 
@@ -102,7 +79,7 @@ cloudflared.exe service install <TOKEN>
 
 ---
 
-### 5. Cloudflare のデバイス設定を変更する
+### 4. Cloudflare のデバイス設定を変更する
 
 デフォルト設定ではプライベート IP はローカルネットワークに接続されてしまうため、Cloudflare 経由になるよう変更する。
 
@@ -116,7 +93,7 @@ cloudflared.exe service install <TOKEN>
 
 ---
 
-### 6. クライアント PC に WARP をインストールし接続設定する
+### 5. クライアント PC に WARP をインストールし接続設定する
 
 1. Zero Trust → Settings → Downloads → 「Download the WARP client」からクライアント OS に合ったインストーラをダウンロード・インストール
 2. WARP 起動後、歯車アイコン → 環境設定 → アカウント → Cloudflare Zero Trust にログイン
@@ -126,7 +103,7 @@ cloudflared.exe service install <TOKEN>
 
 ---
 
-### 7. RDP 接続する
+### 6. RDP 接続する
 
 1. クライアント PC を外部ネットワークに接続し、WARP のトグルを ON にする
 2. 「リモートデスクトップ接続」を起動
