@@ -2,7 +2,7 @@
 
 ## 概要
 
-Cloudflare Zero Trust の Cloudflare Tunnel を使い、外部ネットワークから自宅の Windows PC にリモートデスクトップ（RDP）接続できるようにする手順メモ。
+Cloudflare Zero Trust の Cloudflare Tunnel を使い、VPSのwindows serverに対してセキュアに接続する方法
 
 参考記事: [Cloudflare Tunnelを利用して外部からWindows ProマシンへRDPする](https://zenn.dev/nakurei/articles/rdp-from-outside-to-windows-using-cloudflare)
 
