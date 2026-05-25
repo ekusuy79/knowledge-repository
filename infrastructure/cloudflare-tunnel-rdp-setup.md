@@ -62,9 +62,9 @@ cloudflared.exe service install <TOKEN>
 
 > ⚠️ TOKEN はコマンドに含まれる機密情報。流出させないこと。
 
-6. Cloudflare 画面の Connectors に「Connected」なデバイスが表示されたら Next
-7. Route tunnel の画面で Private Networks タブに切り替え、サーバー PC のプライベート IP を入力して「Save tunnel」
-8. Tunnel の Status が `HEALTHY` になれば成功
+6. Cloudflare 画面で作成したトンネル名のリンクを押下する
+7. CIDRルート タブに切り替え、サーバーPC の IP を入力して「Save」
+8. コネクタ の ステータス が 接続済み になれば成功
 
 ---
 
